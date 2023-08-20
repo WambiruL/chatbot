@@ -1,0 +1,23 @@
+*{
+    box-sizing: content-box;
+}
+
+.form-control{
+    border-radius: 25px;
+    border: none;
+    box-shadow:0 0 15px 0 rgba(29,25,0,0.25);
+
+}
+.btn-lg{
+    background-color: white;
+    border: 2px solid #00dfc0 ; 
+    color: #00dfc0;  
+}
+.btn-lg:hover{
+    background-color: #00dfc0;
+    color: black;
+    border: 2px solid #00dfc0 ;
+}
+#back_btn{
+    margin-left: 10px;
+}
