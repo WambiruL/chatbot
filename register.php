@@ -10,7 +10,7 @@ require_once 'dbconfig/config.php';
 </head>
 <body>
     <h2>Sign Up</h2>
-    <form class="reg_form" action="register.php" method="post">
+    <form class="my_form" action="register.php" method="post">
         <label><b id="name">Username:</b></label><br>
         <input name="username" type="text" id="ruser" placeholder="Username" required><br>
         <label><b id="pass">Password:</b></label><br>
@@ -30,7 +30,7 @@ require_once 'dbconfig/config.php';
             $password2=htmlspecialchars($_POST['password2']);
             $email=htmlspecialchars($_POST['email']);
 
-            if($password1==$password2){
+            if($password==$password2){
                 $query="SELECT * FROM users WHERE username=:username;";
                 $stmt=$pdo->prepare($query);
                 $stmt->bindparam(":username", $username);
