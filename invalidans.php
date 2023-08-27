@@ -5,7 +5,7 @@ require_once 'dbconfig/config.php';
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Update</title>
+	<title>Invalid Response</title>
     <!-- <link href="css/styles.css" rel="stylesheet"> -->
 <style >
     	body{
@@ -91,7 +91,7 @@ require_once 'dbconfig/config.php';
                 <td  colspan="3" align="center"><input type="submit" id="button" name="submit" value="Report as Invalid"/></td>                
 	        </tr>
             <tr>
-            <td  colspan="3" align="center"><input type="clear" id="clear" value="Cancel"/></td>
+            <td  colspan="3" align="center"><button type="clear" id="clear" value="Cancel">Cancel</button></td>
 
                 
 	        </tr>

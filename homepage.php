@@ -37,6 +37,12 @@ body
             	<form class="myform" action="homepage.php" method="post">
                 <input name="logout" type="submit" class="btn btn-outline-warning" id="logout_btn" value="Log Out"/><br>			
 		        </form>
+                <?php
+                	if(isset($_POST['logout'])){
+				        session_destroy();
+                        header('location:login.php');
+			        }
+		        ?>
 
                
                <!--start code-->

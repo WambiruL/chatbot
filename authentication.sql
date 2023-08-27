@@ -5,6 +5,9 @@ CREATE TABLE users (
   password varchar(255) NOT NULL
 )
 
+INSERT INTO users(username,email,password) VALUES
+('Admin', 'admin@gmail.com', 'admin12345')
+
 CREATE TABLE message (
   id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   message text NOT NULL,
