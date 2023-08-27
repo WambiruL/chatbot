@@ -12,10 +12,10 @@ require_once 'dbconfig/config.php';
 
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
-    <title>Aresa Chatbot</title>
+    <title>iSOS Chatbot</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<link href="css/style.css" rel="stylesheet">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
@@ -35,14 +35,14 @@ body
         <div class="row justify-content-md-center mb-8">
             <div class="col-md-8">
             	<form class="myform" action="homepage.php" method="post">
-                <input name="logout" type="submit" class="btn btn-outline-danger" id="logout_btn" value="Log Out"/><br>			
+                <input name="logout" type="submit" class="btn btn-outline-warning" id="logout_btn" value="Log Out"/><br>			
 		        </form>
 
                
                <!--start code-->
                 <div class="card">
                     <div class="card-body messages-box">
-                    <img src="images/bot.png" class="avatar-sm rounded-circle" style="width:30px;"><p>Welcome! My name is iSOS. How can I help you?</p>
+                    <img src="images/bot.png" class="avatar-sm rounded-circle" style="width:30px;"><p>Welcome! How can I help you?</p>
 					    <ul class="list-unstyled messages-list">
 							<?php
 							$sql = "SELECT * FROM message";
@@ -80,12 +80,12 @@ body
                         </ul>
                     </div>
 
-                    <div class="card-header">
+                    <div class="card-header" style="background-color:#014049;">
                         <div class="input-group">
 					        <input id="input-me" type="text" name="messages" class="form-control input-sm" placeholder="Type your message here..." />
 
 					        <span class="input-group-append">
-					            <input type="button" class="btn btn-primary" value="Send" onclick="send_msg()">
+					            <input type="button" class="btn btn-outline-warning" value="Send" onclick="send_msg()">
 					        </span>
 					    </div> 
                     </div>       
