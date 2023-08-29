@@ -110,6 +110,9 @@ require_once 'dbconfig/config.php';
                 $stmt=$pdo->prepare($query);
                 if($stmt->execute()){
                     echo '<script type="text/javascript">alert("Success!")</script>';
+                ?>
+                <META HTTP-EQUIV="Refresh" CONTENT="0; URL=http://localhost:80/chatbot/qna.php">
+                <?php
                 }else{
                     echo '<script type="text/javascript">alert("throw new PDOException($e->getMessage())")</script>';
                 }

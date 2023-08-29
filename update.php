@@ -107,7 +107,7 @@ $rep=$_GET['rep'];
 
            <?php 
             }else{
-                echo "Filed to Update Record";
+                echo "Failed to Update Record";
             }
 
         } 
