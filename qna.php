@@ -79,7 +79,7 @@
                 <td>".$row["question"]."</td>
                 <td>".$row["reply"]."</td>
                 <td><a href='update.php?rn=$row[id]&ques=$row[question]&rep=$row[reply]'>Edit/Update</td>
-                <td><a href='delete.php?rn=$row[id] onclick='return checkdelete()'>Delete</td>
+                <td><a href='delete.php?rn=$row[id] onclick='checkdelete()'>Delete</td>
                 </tr>";
             }
             }else{

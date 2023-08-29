@@ -114,6 +114,7 @@ require_once 'dbconfig/config.php';
                     echo '<script type="text/javascript">alert("throw new PDOException($e->getMessage())")</script>';
                 }
                 $stmt->closeCursor();
+                
             }
             
         }catch(PDOException $e){
@@ -121,6 +122,7 @@ require_once 'dbconfig/config.php';
         }
       }
     ?>
+
     
     
 </body>
