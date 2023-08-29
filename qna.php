@@ -10,6 +10,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
    
     <title>Admin Portal</title>
+    
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#00dfc0;">
@@ -22,7 +23,7 @@
                 <a class="nav-item nav-link" href="adminmain.php">Chats</a>
                 <a class="nav-item nav-link active" href="qna.php">Dataset<span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="invalid.php">Invalid</a>
-                <form class="myform" action="homepage.php" method="post">
+                <form class="myform" action="login.php" method="post">
                 <input name="logout" type="submit" class="btn btn-outline-warning" id="logout_btn" value="Log Out"/><br>			
 		        </form>
                 <?php
@@ -36,7 +37,24 @@
         </div>
     </nav>
 
-    <a href="insert.php"><input type="button" id="insert_btn" value="Insert/Add" align="center"></a>
+    <a href="insert.php"><button type="button" id="insert_btn"  value="Insert/Add" align="center">Insert/Add</button></a>
+    <style>
+	
+	#insert_btn{
+			padding: 2px;
+			height: 50px;
+			width: 90px;
+			color: black;
+			background-color: white;
+            border:2px solid black;
+            cursor:pointer;
+	}
+    #insert_btn:hover{
+        color:white;
+        background-color:black;
+
+    }
+</style>
     <table cellspacing="5" align="center" border="1px" style="width:800px; line-height:40px">
         <tr>
             <th colspan="5"><h2>Chatbot Dataset</h2></th>
