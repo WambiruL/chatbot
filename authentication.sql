@@ -44,8 +44,7 @@ INSERT INTO chatbot_hints (id, question, reply) VALUES
 (6, 'Bye', 'Sad to see you are going. Have a nice day');
 (7, 'Hello', 'Hi, how are you?'),
 (8, 'Hola', 'Hi, how are you?'),
-(9, 'Whats your name?', 'My name is Vishal Bot'),
-(10, 'See you later', 'Sad to see you are going. Have a nice day');
-(11, 'Have a Good Day', 'Sad to see you are going. Have a nice day');
+(9, 'See you later', 'Sad to see you are going. Have a nice day');
+(10, 'Have a Good Day', 'Sad to see you are going. Have a nice day');
 
 

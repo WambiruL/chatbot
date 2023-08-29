@@ -20,7 +20,15 @@
                 <a class="nav-item nav-link active" href="adminmain.php">Chats<span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="qna.php">Dataset</a>
                 <a class="nav-item nav-link" href="invalid.php">Invalid</a>
-                <a class="nav-item nav-link disabled" href="login.php">Sign Out</a>
+                <form class="myform" action="homepage.php" method="post">
+                <input name="logout" type="submit" class="btn btn-outline-warning" id="logout_btn" value="Log Out"/><br>			
+		        </form>
+                <?php
+                	if(isset($_POST['logout'])){
+				        session_destroy();
+                        header('location:login.php');
+			        }
+		        ?>
             </div>
         </div>
     </nav>
